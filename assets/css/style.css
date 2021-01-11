@@ -40,6 +40,7 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+
 }
 
 .past { /*past event color*/
@@ -48,12 +49,12 @@ textarea{
 }
 
 .present { /*current event color*/
-  background-color: #ff6961;
+  background-color: #fe8982;
   color: white;
 }
 
 .future { /*future event color*/
-  background-color: #95f795;
+  background-color: #9ef99e;
   color: white;
 }
 
