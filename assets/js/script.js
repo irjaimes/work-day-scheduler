@@ -5,11 +5,11 @@ var $schedule = $(".schedule");
 var thingsToDo = []; //to store todo hour and text properties
 
 function initSchedule() {
-    console.log(thingsToDo)
+    console.log(thingsToDo);
     //for each time block set time & link object
     $timeRow.each(function () {
         var $block = $(this);
-        var blockTime = parseInt($block.attr("data-hour")); //√√√√√
+        var blockTime = parseInt($block.attr("data-hour")); 
         //object to hold hour and txt input
         var toDoObj = {
             hour: blockTime,
@@ -29,21 +29,20 @@ var currentHour = moment().format("H");
 function blockTimeVsCurrentTime() { 
     $timeRow.each(function () {
         var $block = $(this)
-        var currentBlockHr = parseInt($block.attr("data-hour")); // √√√√√
+        var currentBlockHr = parseInt($block.attr("data-hour")); 
 
         //update class for style depending on time of day
         if (currentBlockHr == currentHour) { //if timeRow hour is current time
-            $block.addClass("present").removeClass("past future"); // √√√√√
+            $block.addClass("present").removeClass("past future"); 
         }
         if (currentBlockHr < currentHour) { // if timeRow hour has passed
-            $block.addClass("past").removeClass("present future"); // √√√√√
+            $block.addClass("past").removeClass("present future"); 
         }
         if (currentBlockHr > currentHour) { //if timeRow hour is pending
-            $block.addClass("future").removeClass("past present"); // √√√√√
+            $block.addClass("future").removeClass("past present"); 
         }
     });
 }
-
 
 // function to render the todoitems from local storage
 function renderToDoItems() {
@@ -54,12 +53,12 @@ function renderToDoItems() {
         var itemHr = thingsToDo[i].hour;
         var inputText = thingsToDo[i].text;
     // display to do item value in text area
-        $("[data-hour=" + itemHr + "]").children("textarea").val(inputText); // √√√√√
+        $("[data-hour=" + itemHr + "]").children("textarea").val(inputText); 
     }
     console.log(thingsToDo)
 }
 
-// Event handler for Save Button     √√√√√
+// Event handler for Save Button     
 function saveBtnHandler() {
     var $block = $(this)
     var checkHour = $(this).parent().attr("data-hour");
