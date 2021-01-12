@@ -19,9 +19,9 @@
 8. Open Iconic
 
 
-**GitHub:** <https://github.com/irjaimes/taskmaster-pro>
+**GitHub:** <https://github.com/irjaimes/work-day-scheduler>
 
-**Application:** <https://irjaimes.github.io/taskmaster-pro/>
+**Application:** <https://irjaimes.github.io/work-day-scheduler/>
 
 
 
