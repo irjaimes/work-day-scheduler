@@ -17,3 +17,12 @@
 6. moment.js 
 7. Google Fonts 
 8. Open Iconic
+
+
+**GitHub:** <https://github.com/irjaimes/taskmaster-pro>
+
+**Application:** <https://irjaimes.github.io/taskmaster-pro/>
+
+
+
+![](assets/images/application-screenshot.png?raw=true "Work Day Scheduler")
